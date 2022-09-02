@@ -7,9 +7,13 @@ jobs:
   Build-brython-plugin-for-acode:
     runs-on: ubuntu-latest
     steps:
-    - name: Yarn setup
-      uses: DerYeger/yarn-setup-action@master
-      with:
-        node-version: 16
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+    - run: npm install --global yarn
     - run: yarn build --mode production
     - run: ls
+    - name: Upload_video_artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: ./dist
+          retention-days: 1
