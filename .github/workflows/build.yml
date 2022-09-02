@@ -11,10 +11,11 @@ jobs:
     - uses: actions/setup-node@v3
     - run: npm install --global yarn
     - run: npm install
-    - run: yarn build
+    - run: yarn build --mode production
+    - run: ls dist/
     - run: ls src/
-    # - name: Upload_video_artifact
-    #   uses: actions/upload-artifact@v3
-    #   with:
-    #     path: ./dist
-    #     retention-days: 1
+    - name: Upload_video_artifact
+      uses: actions/upload-artifact@v3
+      with:
+        path: ./dist
+        retention-days: 1
