@@ -1,6 +1,6 @@
 {
   "id": "acode.plugin.brython",
-  "name": "Python",
+  "name": "Brython",
   "main": "dist/main.js",
   "version": "1.0.0",
   "readme": "README.md",

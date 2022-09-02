@@ -35,7 +35,6 @@ const actions = {
     const { code } = data;
     try {
       await self.brython.loadPackagesFromImports(code);
-      const output = await self.brython.runPythonAsync(code);
       self.postMessage({
         action: 'run',
         success: true,
