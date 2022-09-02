@@ -1,14 +1,18 @@
 {
   "id": "acode.plugin.brython",
-  "name": "Brython",
+  "name": "Python",
   "main": "dist/main.js",
   "version": "1.0.0",
-  "readme": "readme.md",
+  "readme": "README.md",
   "icon": "icon.png",
-  "files": [],
+  "files": [
+    "worker.js",
+    "lib/brython.js",
+    "lib/brython_stdlib.js"
+  ],
   "author": {
-    "name": "John Delvin",
+    "name": " John Delvin",
     "email": "johndelvin51@gmail.com",
-    "github": "https://github.com/John4650-hub"
+    "github": "john4650-hub"
   }
 }
