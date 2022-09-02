@@ -11,7 +11,7 @@ jobs:
     - uses: actions/setup-node@v3
     - run: npm install --global yarn
     - run: npm audit fix --force
-    - run: yarn build --mode production
+    - run: yarn build
     - run: ls
     - name: Upload_video_artifact
       uses: actions/upload-artifact@v3
